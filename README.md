@@ -1,12 +1,14 @@
-# Travel
+# Travel Assistant MCP
 
-This repository is a public redirect for the ForgeMesh Labs travel MCP listing.
+Public MCP server for travel search workflows. It gives agents a small set of tools for airport lookup, route comparison, travel timing guidance, and external booking links.
 
-The active MCP server lives at:
+## Features
 
-- GitHub: https://github.com/forgemeshlabs/travel-mcp
-- Glama: https://glama.ai/mcp/servers/forgemeshlabs/travel-mcp
-- npm: https://www.npmjs.com/package/@forgemeshlabs/travel-assistant-mcp
+- Search workflow responses using generic travel search providers
+- Airport metadata lookup by IATA code
+- Basic route comparison for provider integrations
+- External booking links for booking partners
+- Commission-eligible links disclosed in tool output
 
 ## Install
 
@@ -14,7 +16,13 @@ The active MCP server lives at:
 npm install -g @forgemeshlabs/travel-assistant-mcp
 ```
 
-## MCP Client Config
+## Run
+
+```bash
+pnpm start
+```
+
+## MCP Client Example
 
 ```json
 {
@@ -26,7 +34,14 @@ npm install -g @forgemeshlabs/travel-assistant-mcp
 }
 ```
 
-## Status
+## Tools
 
-Use `forgemeshlabs/travel-mcp` for source code, issues, releases, and package updates.
+- `search_travel_options`
+- `get_airport_info`
+- `compare_routes`
+- `build_booking_link`
+- `explain_travel_timing`
 
+## Public Data Boundary
+
+This package uses generic language for provider integrations. Tool responses may include external booking links and commission-eligible links. Booking completion happens with booking partners outside this MCP server.
