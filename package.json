@@ -1,0 +1,12 @@
+{
+  "name": "@forgemeshlabs/travel",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Redirect repository for the ForgeMesh Labs Travel Assistant MCP server.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/forgemeshlabs/travel.git"
+  },
+  "homepage": "https://github.com/forgemeshlabs/travel-mcp#readme",
+  "license": "MIT"
+}
